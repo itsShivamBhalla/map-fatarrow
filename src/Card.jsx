@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './index.css';
 function Card (props)
 {
   return (    
@@ -8,7 +8,7 @@ function Card (props)
     <div className = "cards" >
       <div className="card">
         <img src={props.imgsrc} alt ="myPic" className="card__img"/>
-          <div className="card__igit pushnfo">
+          <div className="card__info">
           <h3 className="card__title">{props.sname}</h3>
             <span className="card__category">{props.title}</span>
             <a href={props.link} target="_blank">
@@ -18,7 +18,7 @@ function Card (props)
             </a>
           </div>
       </div>
-    </div>
+    </div> 
     </>
 
   )
